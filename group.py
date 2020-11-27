@@ -48,3 +48,18 @@ my_group = {
         }
     }
 }
+print("max age:" + str(max([value['age'] for value in my_group.values()])))
+
+a = [len(value['relations']) for value in my_group.values()] 
+
+print("Average no of relations: " + str(sum(a)/len(a)))
+
+b = [value['age'] for value in my_group.values() if len(value['relations']) >= 1] 
+
+print("Max age of people with >= 1 relation: " + str(max(b)))
+
+'''
+# test the way to call things in directionary
+for value in my_group.values():
+    print (value['age'])
+'''
