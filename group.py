@@ -32,5 +32,19 @@ my_group = {
             "John": "cousin",
             "Zalika": "landlord"
         }
+    },
+       "Karry": {
+        "age": 21,
+        "job": "singer",
+        "relations": {
+            "Roy": "friend"
+        }
+    },
+    "Roy": {
+        "age": 20,
+        "job": "singer",
+        "relations": {
+            "Karry": "friend"
+        }
     }
 }
